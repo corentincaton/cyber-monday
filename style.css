@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Oakes Grotesk';
+  src: url('OakesGrotesk-Medium.woff2') format('woff2');
+}
+
+.neonText {
+  color:#A5C9FA;
+  animation: pulsate 0.12s ease-in-out infinite alternate;    
+}
+
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 8px #A5C9FA,
+      0 0 16px #4A7AB0,
+      0 0 24px #4A7AB0,
+      0 0 48px #4A7AB0,
+      0 0 64px #4A7AB0,
+      0 0 96px #4A7AB0,
+      0 0 128px #4A7AB0,
+      0 0 192px #4A7AB0;
+  }
+ 0% {
+    /* Slightly smaller blur radius */
+    text-shadow:
+      0 0 8px #A5C9FA,
+      0 0 12px #4A7AB0,
+      0 0 20px #4A7AB0,
+      0 0 40px #4A7AB0,
+      0 0 56px #4A7AB0,
+      0 0 84px #4A7AB0,
+      0 0 116px #4A7AB0,
+      0 0 180px #4A7AB0;
+  }
+}
+
+/* Additional styling */
+body {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px;
+  gap: 40px;
+}
+
+h1 {
+  font-size: 96px;
+  letter-spacing: -2.88px;
+}
+
+h2 {
+ font-size: 32px;
+ letter-spacing: -0.32px;
+}
+
+.sub {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+body {
+  font-family: "Oakes Grotesk", sans-serif;
+  background-color: #121212;
+}  
+
+h1, h2 {
+  margin: 0px;
+}
